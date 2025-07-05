@@ -11,7 +11,7 @@ function page({ params }) {
     useEffect(() => {
         async function fetchPost() {
             try {
-                const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${id}`)
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${id}`) 
                 // console.log(response.data, "form")
                 setPost(response.data)
             } catch (error) {
