@@ -25,7 +25,7 @@ function EditForm({ initialPost }) {
         e.preventDefault()
         // console.log(formData, "form data")
         try {
-            const id=initialPost._id
+            const id = initialPost._id
             await axios.put(`${process.env.NEXT_PUBLIC_BACKEND_URL}/posts/${id}`, formData)
             // console.log("Post updated successfully")
             toast.success("Post updated successfully")

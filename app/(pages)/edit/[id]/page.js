@@ -6,7 +6,7 @@ import React, { use, useEffect, useState } from 'react'
 
 function page({ params }) {
     const { id } = use(params)
-    const [post, setPost] = useState( null )
+    const [post, setPost] = useState(null)
     // console.log(id, "id")
     useEffect(() => {
         async function fetchPost() {
